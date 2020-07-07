@@ -39,6 +39,7 @@ docker build -t myimage .
       Successfully tagged myimage:latest
       
  9. TBD: Upload image
+ 
  10.TBD: Ingress controller
  
  
