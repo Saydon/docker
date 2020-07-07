@@ -45,11 +45,9 @@ docker build -t myimage .
  
 Prerequisites
 
-Create a free account Azure.
-Account created https://portal.azure.com/
+Create a free account Azure  https://portal.azure.com/
 
 Create a free account https://github.com/Azure/aks-engine/blob/master/docs/tutorials/quickstart.md.
-Account created https://github.com/Azure/aks-engine
 
 Download helm https://github.com/helm/helm/releases/tag/v2.16.9.
 Install Helm.exe
