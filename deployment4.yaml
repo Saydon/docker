@@ -1,0 +1,95 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: my-service-a
+spec:
+  selector:
+    app: nginx-a
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 80
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nginx-deployment-a
+  labels:
+    app: nginx-a
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: nginx-a
+  template:
+    metadata:
+      labels:
+        app: nginx-a
+    spec:
+      containers:
+      - name: nginx
+        image: nginx:1.14.2
+        ports:
+        - containerPort: 80
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: my-service-b
+spec:
+  selector:
+    app: nginx-b
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 80
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nginx-deployment-b
+  labels:
+    app: nginx-b
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: nginx-b
+  template:
+    metadata:
+      labels:
+        app: nginx-b
+    spec:
+      containers:
+      - name: nginx
+        image: nginx:1.14.2
+        ports:
+        - containerPort: 80
+---
+apiVersion: networking.k8s.io/v1
+kind: NetworkPolicy
+metadata:
+  name: access-nginx-a
+spec:
+  podSelector:
+    matchLabels:
+      app: nginx-a
+  ingress:
+  - from:
+    - podSelector:
+        matchLabels:
+          app: "nginx-a"
+---
+apiVersion: networking.k8s.io/v1
+kind: NetworkPolicy
+metadata:
+  name: access-nginx-b
+spec:
+  podSelector:
+    matchLabels:
+      app: nginx-b
+  ingress:
+  - from:
+    - podSelector:
+        matchLabels:
+          app: "nginx-b"
