@@ -52,7 +52,9 @@ docker build -t ana:1  .
         ....
         8803ef42039d: Pushed
  
- 10. kubectl  apply -f  deployment_bit.yaml
+ 10. Update deploymnet with bitcoin.azurecr.io/bitcoin . Use  attached yaml file deployment_bit.yaml
+ 
+ kubectl  apply -f  deployment_bit.yaml
  
         service/my-service-a unchanged
         
@@ -66,10 +68,11 @@ docker build -t ana:1  .
         
         networkpolicy.networking.k8s.io/access-nginx-b unchanged
  
- 
+ 11. kubectl port-forward svc/my-service-a 80:80
 
+ 12. http://127.0.0.1/
  
- 11. TBD: Ingress controller
+ 13. TBD: Ingress controller
  
  
 Prerequisites
