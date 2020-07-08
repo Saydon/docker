@@ -13,8 +13,8 @@ def getBitcoinPrice():
         print("Error querying Bitstamp API")
 
 #Get average of a list 
-def Average(lst): 
-    return sum(lst) / len(lst) 
+def Average(prices): 
+    return sum(prices) / len(prices) 
 
 #Description: Get the current price of Bitcoin every minute and average price of the last 10 minutes
 prices = []
