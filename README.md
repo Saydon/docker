@@ -74,7 +74,21 @@ docker build -t ana:1  .
 
  13. http://127.0.0.1/
  
- 13. TBD: Ingress controller
+ 14. kubectl  --stdin --tty nginx-deployment-a-75c948497f-bjmk4 -- /bin/bash
+ 
+     root@nginx-deployment-a-75c948497f-bjmk4:/usr/src/app# ls
+     
+     bitcoin.py  requirements.txt
+     
+     root@nginx-deployment-a-75c948497f-bjmk4:/usr/src/app# ps
+     
+     PID TTY          TIME CMD
+     
+     6 pts/0    00:00:00 bash
+     
+     12 pts/0    00:00:00 ps
+    
+ 15. TBD: Ingress controller
  
  
 Prerequisites
