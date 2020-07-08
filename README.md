@@ -128,7 +128,7 @@ DOC  https://docs.nginx.com/nginx-ingress-controller/installation/installation-w
 
 DOC  https://kubernetes.io/docs/concepts/services-networking/service/
 
-DOC  https://kubernetes.io/docs/concepts/workloads/controllers/deployment/
+DOC  Deployments https://kubernetes.io/docs/concepts/workloads/controllers/deployment/
 
 DOC  https://docs.microsoft.com/en-us/azure/container-registry/container-registry-get-started-docker-cli
 
