@@ -6,9 +6,13 @@ Steps
 
 3. az account set --subscription 841587cb-5166-4a5b-b201-3fd7938a936a
 
-4. az group create --name anna-group3 --location westus2
+4. Create Resource Group 
 
-5. az ad sp create-for-rbac --role="Owner" --scopes="/subscriptions/841587cb-5166-4a5b-b201-3fd7938a936a/resourceGroups/anna-group3"
+az group create --name anna-group3 --location westus2
+
+5. Create Service Principal
+
+az ad sp create-for-rbac --role="Owner" --scopes="/subscriptions/841587cb-5166-4a5b-b201-3fd7938a936a/resourceGroups/anna-group3"
 
 6. Use  attached json file kubernetes3.json 
 
