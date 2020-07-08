@@ -163,6 +163,8 @@ DOC  https://github.com/Azure/aks-engine/blob/master/docs/topics/clusterdefiniti
 
 DOC  https://www.nginx.com/products/nginx/kubernetes-ingress-controller
 
+DOC  Ingress https://kubernetes.io/docs/concepts/services-networking/ingress-controllers/
+
 DOC  https://docs.nginx.com/nginx-ingress-controller/installation/installation-with-helm/
 
 DOC  https://kubernetes.io/docs/concepts/services-networking/service/
@@ -182,5 +184,13 @@ DOC  https://kubernetes.io/docs/tasks/debug-application-cluster/get-shell-runnin
 DOC  Application and service principal objects in Azure Active Directory https://docs.microsoft.com/en-us/azure/active-directory/develop/app-objects-and-service-principals
 
 
+Terminology
 
+Ingess:  An API object that manages external access to the services in a cluster, typically HTTP. Ingress exposes HTTP and HTTPS routes from outside the cluster to services within the cluster. Traffic routing is controlled by rules defined on the Ingress resource.
+
+Node: A worker machine in Kubernetes, part of a cluster.
+
+Cluster: A set of Nodes that run containerized applications managed by Kubernetes. Note: in most common Kubernetes deployments, nodes in the cluster are not part of the public internet.
+
+Service: A Kubernetes Service that identifies a set of Pods using label selectors. Unless mentioned otherwise, Services are assumed to have virtual IPs only routable within the cluster network
 
