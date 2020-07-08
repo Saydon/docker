@@ -143,7 +143,7 @@ Documentation
 
 DOC  https://docs.microsoft.com/en-us/azure-stack/user/azure-stack-kubernetes-aks-engine-deploy-cluster?view=azs-2002
 
-DOC  https://github.com/Azure/aks-engine/blob/master/docs/tutorials/quickstart.md
+DOC  Deploy your First Cluster https://github.com/Azure/aks-engine/blob/master/docs/tutorials/quickstart.md
 
 DOC  https://github.com/Azure/aks-engine/blob/master/docs/topics/service-principals.md
 
