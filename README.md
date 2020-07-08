@@ -47,9 +47,13 @@ docker build -t ana:1  .
  docker tag ana:1 bitcoin.azurecr.io/bitcoin:1
  
  docker push bitcoin.azurecr.io/bitcoin:1
+ 
         The push refers to repository [bitcoin.azurecr.io/bitcoin]
+        
         ....
+        
         ....
+        
         8803ef42039d: Pushed
  
  10. Update deploymnet with bitcoin.azurecr.io/bitcoin . Use  attached yaml file deployment_bit.yaml
