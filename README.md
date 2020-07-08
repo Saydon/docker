@@ -66,6 +66,9 @@ docker build -t ana:1  .
         
         networkpolicy.networking.k8s.io/access-nginx-b unchanged
  
+ 
+
+ 
  11. TBD: Ingress controller
  
  
