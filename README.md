@@ -78,22 +78,35 @@ docker build -t ana:1  .
 
  13. http://127.0.0.1/
  
- 14. kubectl  --stdin --tty nginx-deployment-a-75c948497f-bjmk4 -- /bin/bash
+ 14. Update deploymnet with bitcoin.azurecr.io/bitcoin , annotations and LoadBalancer type. Use  attached yaml file deployment_bit_with_LB_ingress.yaml
  
-     root@nginx-deployment-a-75c948497f-bjmk4:/usr/src/app# ls
+ kubectl  apply -f  deployment_bit_with_LB_ingress.yaml
+ 
+ 15. kubectl  get services
+ 
+            NAME                   TYPE           CLUSTER-IP     EXTERNAL-IP   PORT(S)        AGE
+
+            my-service-a           LoadBalancer   10.0.88.60     40.64.64.67   80:31508/TCP   3d1h
+
+            my-service-b           ClusterIP      10.0.91.133    <none>        80/TCP         3d1h
+ 
+ 16. kubectl  get pods
+ 
+            NAME                                  READY   STATUS    RESTARTS   AGE
+
+            nginx-deployment-a-867797dc5d-zx7rf   1/1     Running   0          80s
+            
+            nginx-deployment-b-dd8cbcbd5-wvbnz    1/1     Running   0          3d
+ 
+ 
+ kubectl  exec --stdin --tty nginx-deployment-a-75c948497f-bjmk4 -- /bin/bash
+ 
+     root@nginx-deployment-a-867797dc5d-zx7rf:/usr/src/app# ll
      
      bitcoin.py  requirements.txt
      
-     root@nginx-deployment-a-75c948497f-bjmk4:/usr/src/app# ps
+     root@nginx-deployment-a-867797dc5d-zx7rf:/usr/src/app#  curl http://40.64.64.67
      
-     PID TTY          TIME CMD
-     
-     6 pts/0    00:00:00 bash
-     
-     12 pts/0    00:00:00 ps
-    
- 15. TBD: Ingress controller
- 
  
 Prerequisites
 
