@@ -14,9 +14,13 @@ az group create --name anna-group3 --location westus2
 
 az ad sp create-for-rbac --role="Owner" --scopes="/subscriptions/841587cb-5166-4a5b-b201-3fd7938a936a/resourceGroups/anna-group3"
 
-6. Use  attached json file kubernetes3.json 
+6.1 Use  attached json file kubernetes3.json 
 
 aks-engine deploy --subscription-id 841587cb-5166-4a5b-b201-3fd7938a936a  --dns-prefix anna-group4  --resource-group anna-group3 --location westus2  --api-model  kubernetes3.json  --client-id 77ddf946-9656-40eb-825f-0d3f4368770f   --client-secret DrQA_YIbOw7gvkp_A-hSG1axgR7QNqMFXk  --set servicePrincipalProfile.clientId="77ddf946-9656-40eb-825f-0d3f4368770f" --set servicePrincipalProfile.secret="DrQA_YIbOw7gvkp_A-hSG1axgR7QNqMFXk"
+
+6.2 kubectl cluster-info
+
+6.3 kubectl get nodes
 
 7. Use  attached yaml file deployment4.yaml
 
