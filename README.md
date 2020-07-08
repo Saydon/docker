@@ -32,15 +32,21 @@ kubectl  apply -f  deployment4.yaml
 
 8. Use attached files (bitcoin.py , Dockerfile , requirements.txt) to build image
 
-docker build -t myimage .
+docker build -t ana:1  .
 
       Successfully built e6ad49901be5
       
-      Successfully tagged myimage:latest
+      Successfully tagged ana:1
       
- Note: https://hub.docker.com/r/a7659833/bitcoinimage
+ 9. Upload image to Azure docker registry
  
- 9. TBD: Upload image to Azure docker registry
+ az acr login --name bitcoin
+      
+       Login Succeeded
+ 
+ docker tag ana:1 bitcoin.azurecr.io/bitcoin:1
+ 
+ docker push bitcoin.azurecr.io/bitcoin:1
  
  10.TBD: Ingress controller
  
@@ -103,6 +109,8 @@ DOC  https://docs.microsoft.com/en-us/azure/container-registry/container-registr
 DOC  https://kubernetes.io/docs/concepts/services-networking/connect-applications-service/
 
 DOC  https://www.weave.works/blog/production-ready-checklist-kubernetes
+
+DOC  https://docs.microsoft.com/en-us/azure/container-registry/container-registry-get-started-azure-cli
 
 
 
