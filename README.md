@@ -153,7 +153,7 @@ DOC  https://github.com/Azure/aks-engine/blob/master/docs/topics/service-princip
 
 DOC  Quickstart: Deploy an Azure Kubernetes Service cluster using the Azure CLI https://docs.microsoft.com/en-us/azure/aks/kubernetes-walkthrough
 
-DOC  https://kubernetes.io/docs/tasks/administer-cluster/declare-network-policy/#create-an-nginx-deployment-and-expose-it-via-a-service
+DOC  Declare Network Policy https://kubernetes.io/docs/tasks/administer-cluster/declare-network-policy/#create-an-nginx-deployment-and-expose-it-via-a-service
 
 DOC  https://docs.microsoft.com/en-us/azure-stack/user/kubernetes-aks-engine-custom-vnet?view=azs-2002
    
@@ -180,8 +180,6 @@ DOC  https://docs.microsoft.com/en-us/azure/container-registry/container-registr
 DOC  https://kubernetes.io/docs/tasks/debug-application-cluster/get-shell-running-container/
 
 DOC  Application and service principal objects in Azure Active Directory https://docs.microsoft.com/en-us/azure/active-directory/develop/app-objects-and-service-principals
-
-
 
 
 
