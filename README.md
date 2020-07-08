@@ -147,7 +147,7 @@ DOC  https://github.com/Azure/aks-engine/blob/master/docs/tutorials/quickstart.m
 
 DOC  https://github.com/Azure/aks-engine/blob/master/docs/topics/service-principals.md
 
-DOC  https://docs.microsoft.com/en-us/azure/aks/kubernetes-walkthrough
+DOC  Quickstart: Deploy an Azure Kubernetes Service cluster using the Azure CLI https://docs.microsoft.com/en-us/azure/aks/kubernetes-walkthrough
 
 DOC  https://kubernetes.io/docs/tasks/administer-cluster/declare-network-policy/#create-an-nginx-deployment-and-expose-it-via-a-service
 
