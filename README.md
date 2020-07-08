@@ -38,7 +38,15 @@ docker build -t myimage .
       
       Successfully tagged myimage:latest
       
- 9. TBD: Upload image
+ 9. Tagged the image in this format {{username}}/{{imagename}}:{{version}}
+ 
+ docker tag myimage:latest a7659833/bitcoinimage:1
+ 
+ 10. Push the image 
+ 
+ docker push a7659833/bitcoinimage:1
+ 
+ 11. https://hub.docker.com/r/a7659833/bitcoinimage
  
  10.TBD: Ingress controller
  
@@ -101,6 +109,8 @@ DOC  https://docs.microsoft.com/en-us/azure/container-registry/container-registr
 DOC  https://kubernetes.io/docs/concepts/services-networking/connect-applications-service/
 
 DOC  https://www.weave.works/blog/production-ready-checklist-kubernetes
+
+DOC  http://blog.shippable.com/build-a-docker-image-and-push-it-to-docker-hub
 
 
 
