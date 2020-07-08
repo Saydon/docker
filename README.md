@@ -152,6 +152,8 @@ DOC  https://www.weave.works/blog/production-ready-checklist-kubernetes
 
 DOC  https://docs.microsoft.com/en-us/azure/container-registry/container-registry-get-started-azure-cli
 
+DOC  https://kubernetes.io/docs/tasks/debug-application-cluster/get-shell-running-container/
+
 
 
 
