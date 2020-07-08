@@ -52,7 +52,21 @@ docker build -t ana:1  .
         ....
         8803ef42039d: Pushed
  
- 10.TBD: Ingress controller
+ 10. kubectl  apply -f  deployment_bit.yaml
+ 
+        service/my-service-a unchanged
+        
+        deployment.apps/nginx-deployment-a configured
+        
+        service/my-service-b unchanged
+        
+        deployment.apps/nginx-deployment-b unchanged
+        
+        networkpolicy.networking.k8s.io/access-nginx-a unchanged
+        
+        networkpolicy.networking.k8s.io/access-nginx-b unchanged
+ 
+ 11. TBD: Ingress controller
  
  
 Prerequisites
