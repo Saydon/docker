@@ -68,9 +68,11 @@ docker build -t ana:1  .
         
         networkpolicy.networking.k8s.io/access-nginx-b unchanged
  
- 11. kubectl port-forward svc/my-service-a 80:80
+ 11. kubectl get deployments
+ 
+ 12. kubectl port-forward svc/my-service-a 80:80
 
- 12. http://127.0.0.1/
+ 13. http://127.0.0.1/
  
  13. TBD: Ingress controller
  
