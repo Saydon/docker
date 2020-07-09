@@ -90,7 +90,7 @@ docker build -t ana:1  .
  
  kubectl  apply -f  deployment_bit_with_LB_ingress.yaml
  
- 15. kubectl  get services
+ 15.1 kubectl  get services
  
             NAME                   TYPE           CLUSTER-IP     EXTERNAL-IP   PORT(S)        AGE
 
@@ -98,7 +98,9 @@ docker build -t ana:1  .
 
             my-service-b           ClusterIP      10.0.91.133    <none>        80/TCP         3d1h
  
- 16. kubectl  get pods
+ 15.2 kubectl get all -A
+ 
+ 15.3 kubectl  get pods
  
             NAME                                  READY   STATUS    RESTARTS   AGE
 
@@ -107,7 +109,7 @@ docker build -t ana:1  .
             nginx-deployment-b-dd8cbcbd5-wvbnz    1/1     Running   0          3d
  
  
- kubectl  exec --stdin --tty nginx-deployment-a-75c948497f-bjmk4 -- /bin/bash
+ 15.4 kubectl  exec --stdin --tty nginx-deployment-a-75c948497f-bjmk4 -- /bin/bash
  
      root@nginx-deployment-a-867797dc5d-zx7rf:/usr/src/app# ll
      
