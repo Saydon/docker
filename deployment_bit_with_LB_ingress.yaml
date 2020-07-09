@@ -3,7 +3,7 @@ kind: Service
 metadata:
   name: my-service-a
   annotations:
-      service.beta.kubernetes.io/azure-load-balancer-internal: "true"
+      service.beta.kubernetes.io/azure-load-balancer-external: "true"
 spec:
   selector:
     app: nginx-a
