@@ -185,6 +185,7 @@ DOC  https://kubernetes.io/docs/tasks/debug-application-cluster/get-shell-runnin
 
 DOC  Application and service principal objects in Azure Active Directory https://docs.microsoft.com/en-us/azure/active-directory/develop/app-objects-and-service-principals
 
+DOC  Application Gateway Ingress Controller for Azure Kubernetes Service https://azure.microsoft.com/en-us/blog/application-gateway-ingress-controller-for-azure-kubernetes-service/
 
 Terminology
 
